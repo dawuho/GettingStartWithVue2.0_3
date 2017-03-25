@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Third Vue App</title>
+    <link rel="stylesheet" href="Content/3_2.css">
+    <script src="../Scripts/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-on:input="cssClass=$event.target.value">
+      <p v-bind:class="cssClass">Class:{{cssClass}}</p>
+    </div>
+  <script src="Scripts/3_2.js"></script>
+  </body>
+</html>
